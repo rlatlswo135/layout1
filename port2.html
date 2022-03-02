@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./port2.css">
+        <link rel="stylesheet" href="../fontawesome/css/all.min.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+        </style>
+    </head>
+    <body>
+        <!-- Bootstrap이엇다면 row col로 레이아웃 비율 정하는것도 쉬웟을듯하나 연습을위해 순수 css로 해보자 -->
+        <div class="container">
+            <div class="profile">
+                <div class="profile-left">
+                    <img class="profile-img" src="https://photo.hankooki.com/newsphoto/v001/2021/09/13/kha20210913180233_O_01_C_1.jpg">
+                    <div class="profile-img-right">
+                        <h4>Minju Lee</h4>
+                        <p>Front-end Developer</p>
+                        <p>
+                            <i class="fas fa-location-arrow"><span>서울 마포구</span></i>
+                        </p>
+                        <button class="button-skyblue">Contact</button>
+                    </div>
+                </div>
+                <div class="profile-right">
+                    <div class="profile-right-left">
+                        <ul>
+                            <li>Location</li>
+                            <li>Age</li>
+                            <li>Experience</li>
+                            <li>School</li>
+                        </ul>
+                    </div>
+                    <div class="profile-right-right">
+                        <ul>
+                            <li>서울 마포구</li>
+                            <li>90년생</li>
+                            <li>신입</li>
+                            <li>천조국대 토목학과</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="profile-middle"><span>Profile</span></div>
+            <div class="profile-content">
+                <!-- bootstrap tab쓰면 되는데 일단 html로 해보자 -->
+                <div class="profile-content-left">
+                    <h4 class="title">WORKS</h4>
+                    <p class="list-p">Landing page design</p>
+                    <p class="list-p">Flyer design</p>
+                    <p class="list-p">Vue.js To-do app</p>
+                    <p class="list-p">Shopping page design</p>
+                </div>
+                <div class="profile-content-middle">
+                    <div class="profile-content-middle-1">
+                        <h4 class="title">ABOUT</h4>
+                        <p class="list-p long">
+                            I am a front-end designer who is excellent at Bootstrap, Sass, Foundation, I have dealt lots of
+                             in-hous design works and outsource things, If you want to check my portfolio, please visit 
+                             MinjiLee.com</p>
+                    </div>
+                    <div class="profile-content-middle-2">
+                        <h4 class="title">SKILLS</h4>
+                        <div style="padding-top:5px">
+                            <button class="profile-content-middle-button">HTML5</button>
+                            <button class="profile-content-middle-button">JavaScript</button>
+                            <button class="profile-content-middle-button">CSS3</button>
+                            <button class="profile-content-middle-button">Illustrator</button>
+                            <button class="profile-content-middle-button">Photoshop</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-content-right">
+                    <div class="profile-content-right-1">
+                        <i class="fas fa-fire fa-5x"></i>
+                        <p>Find me at Linkedout.com</p>
+                        <button class="button-skyblue">Sign Up</button>
+                        <p style="padding-top:15px; color:#6fbaf8;">Already a member?</p>
+                    </div>
+                    <div class="profile-content-right-2">
+                        <p class="profile-content-right-2-title">People You Might Know</p>
+                        <div class="profile-side">
+                            <img class="profile-img-side" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQYglM196eVP8GpjuoQv2S1SssY3rohSl-zQ&usqp=CAU">
+                            <div class="profile-img-side-right">
+                                <h4>Dabi Woo</h4>
+                                <p>Developer</p>
+                                <p>
+                                    <i class="fas fa-location-arrow"><span>Seoul</span></i>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="profile-side">
+                            <img class="profile-img-side" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBIWFRgVFRUYGBgaGRoYGRgYGBoYGBoYGBkaGhgaGBgcIS4lHCErHxgaJjgmKy80NTU1GiQ7QDs0Py40NTEBDAwMEA8QHBISGjQhISE0NDQ0NDQ0MTQ0NDQ0MTQ0NDQ0NDQ0MTE0NDExMTQ0NDQ0NDExNDQ0NDQ0NDQ0NDQ0NP/AABEIARMAtwMBIgACEQEDEQH/xAAcAAADAAMBAQEAAAAAAAAAAAAAAQIDBgcFBAj/xABBEAACAgAEAwQGBwYFBAMAAAABAgARAwQhMQUSQQZRYYEHInGRocETUmKCsdHwIyQyQnKyM2NzkuFTorPCFBU0/8QAGAEBAQEBAQAAAAAAAAAAAAAAAAECAwT/xAAeEQEBAAIDAQEBAQAAAAAAAAAAAQIRAyExEjJRQf/aAAwDAQACEQMRAD8A3ao6hCbQVCOEAhUdQqBNQqVCBMKlVCGUwqOoQJhDmG1xBwesNAxGVFAmIypJhkjJMsyTAgyDMhkGBjMI2hA9CEcIaKMQjgEIQgEITzOM8Xw8uvM7fdGrHuobwPQZwJhfOINz7QNT7pzfinbQM/qcyij11N942/XSea/almTlZ2sEUQxS0ojUi6a/bYk2vy6XmOOYa4iJdlxYqzuaGvjRnl8Y7VYeGzoptgvuPUWN+k5PjcZxWdXLWVOh79K16XoLoeMw5jPuz821g35jXWT6X5jpmV7Uq7F+YqCPVsirs81DrW133+0+3wDMhyKazVklrOp2UDTus+M43lsxy8ptjR0FmqA2vp023qbJ2e4+yYgZ7NmqBrfp4ARKadginxZDiCONDZFWdte4T7pplJkmXFDKDEZRiMCDIMyGQYGNoRtCB6EIQhoQjgIBCOJjA1rtVx44Apbs7AVZ8vnoPbOb8T4/iOvMzcrnpvp4AT6O23FA+ZcqQyqeTfQkb+V/rWapitdnqZi3bcmox4uLzWT3zETAiCYZbaQJRUzIL285mymVBYK1i9pYwALDaGyL0qh+EbNVaZW+8eHX3zCxPNtqP15zM5AGjg/0kT520F2fb0vxP62hWzdmOMYnMmDe9qhNDl5yCx5id9BXnOwZTDZUAY2aGvXb4z8/AH1SOtMD3NvodwZ1Dsd2rDqMPHcBrAVmNE30N7nz6zWNZym27mKVEZpzQZJlmSYEmQZkMgwMTQjaED0IRwhoo4SoBMeMBRuZImgcE48UGM4QAIp5R93S9fM31uecKpT3tvsK0+Fj8ZuvbXhYVnxiiqTVKoJs3ZdmrTevGpo/KxZV3F/jOfjfrP8A/ALE8o7hp3z1uEcAY2xB0u9Pz8J6fBuz+ZDAFCcNzvYPLvr3j/mdC4VwnkQqR085xyy76enHjkm60HjPZ1lRMRbsXfUd4rynmY3B8Qr9JyMUYElgDSnrzd3UH9X2z/6oMgUjQCq935THleErhAgDQm68qllsLMa/OuMoU6DT9VRn0YTUNtDv3f8ABnYePdmcrialFU66rQNzmvFuFHBJHQgjz/Qmsc3PLDXceI1UKPlN07HcPLsj6Wrgg9ao/P5TRmPdv+PjOpdgco30KsGq7Pd5H3Tc9cr43ldo5OGDWp1/XdKnRySZJlmSYEGSZZkmBiaEbQgffKhCGhCEBAIRwgeTxzhqYmE4K2SjAd+3TunDeDLz4iDvP5H5T9EVOG8N4ccHiD4RFfRu4A+zqVI+7XvmM/Nt8f6kdIyfFcLDQBzsO6ejw3tNl3NKTddRU8TDyuVRR9KCxLaLqSzHYBRq3sl8K4vw7GZkwcEqUFsxTlC2xXU36uo61OE86j1W3fdbtg8RLLY7t5r3GOKZx/UwFA72J2/Kerw9K5kOlT4M7htVg8o5qYirA6kXpdbeMn1T5jxW4RnSA2K6G9aDN8xPmz/Cy6cr0WGzfnJy/B82GdnzrupBGEA509csGZG9W69WgK909vLZRwnrtZHWqvyi3sk6cZ4zw44OMU9hHsM6/wBgsP8AccA1upO96F2r4TT+1HCPpszgqSVVgwZhuAlt+FzcOzK4yVhhCmAqBUs2woWCx6WDt4zrjlNyOGXHbLZ/jYqiMoxTs86TJMoxGBjMRlGSYGMwjaED74QhAIxCEBwhHAU552gy2HiZvDzOHQZHODirfrbEI5Ugey9QbHdOiTwOP5DDCNiKi8wZXLAUfVa2vvsD8Jy5LZI7cMlt36nC4Qrujgeso0Pdfd3T1MtwwJbUq2eZuRQGZu9n3MjhOYBUVPYqxOEeqvMwcSmMtcQc1eM8ZuL4OFiKmI6hnsgH7J1BmJ+PYbu6rh4jDZXVCU5vqg3ZPsFeMmumtNvTBA/lHunw58DWZ8HFYILN6Cz49Z5nEcf1TNWsyNU4knPjYag0ecgGrrmRl1HXUzccJGAUtuQL8huPf8Jp+UVmzCECzz2B7AT8ptmCzEKrGyu/eAB1H63msf1GcvzX0mKMxT0vCRkmWZJgQZBmQyDAhoQaED7o4o4BHFHAcIRwFPkzxPI6UDzLpe2mh/Xsn2THjYQcUb77G8znj9TTpx5fOW2qcExWRjhtYKmte7dfhNow8zS+U8bjeQCFcZLsEK+pNg6K3kdPPwl4GKWXTeq855ssbjdV68cplNxZy2DzlmRAGNmwDZ7yDHi5vARQOdVA2rYDyni4vB3L2+K7jeieSvAclT6W4VgGv2AsfzP658ixNRL06TGXu16WX4thvaI4Y70DrPmzz2tzJlsjhovKiKNbsAA34kbz5eIuFHsmdsePj4Jgc+YG9IrMaNfZAsf1fCbWmEq3Q33Nkn3ma52O9Y4z+KqPLmJ/Ee6bPPTx4zW3k5Mrbr/EmIxxTo5FEZRkmBBkGZDIMCGhBoQPujhCARwhAcIQgEIQgRi4aspVhasCCPA6GaVw3O8jthOfWRin9XKSL+E3ic+7Q5Eti4jpuHJ0+PxnHn8lejgvdjaEphYn1Jy8s0HIcaxU0Ovgfznpv2hJ1C6+3SeaPVdtnxGCrc0zj/FeY8iakmp83EeNYrith3CY+DcPZ352HsljLbuxmFy4bj7Q/tmwzxezxpsVe7kPv5h8p7U9fH5Hj5P1RIMoxTbmRkmUYjAgyDMhkGBDQg0IH3RwhAIRwgEJhzWaw8NC+I6og3ZyFHvM0jjXpIwltMshxG253BVL8F/ib4QN7d1UFmIUDUkkAAeJO01HjPpByeFa4V47/Y0QHxc7/dBnMuK8ZzOZPNj4jMNwmyDupBp57zzysNadO4TmMzm8M5nHdgrMwTCQlMNUQlTag+uSQdWvbSp6eQwLSqnydg3D5DkG+G+Ih+8fpB/fPVyIoUZ4893K7ezDUxmnj5rho5rqZsPhWGVue1i4IMxrlB3zMjVrwMThq3oJ6mVywVZ9hy4EWMQFl0m3k4ePiJj2jEWNe40eo6zY8tn7Hrij3jUfmJ4eSwOZyfCbHg5UVNY5ZY+M5Y45eqw8VWFqwYbWCDr3HxlGebxXhTlWfAY4eMFtHFUxWyEcHR0O1Ha7FGeH2b7d4GY5UxqwcU0NT+zc/ZfoT3HyJnpxy+o8uWPzW2xGOIzTCTIMsyTAxtCDQgffCETuACSQABZJ0AA3JPSA3YAEkgACyToABuSZoXaL0jYeHaZRRiN/1G/wx/QN39ug9s13tx2uOZY4OC37uNCdR9I31j9kdB1qzek1BVhqR9fEeI4+YfnxsRnbpzHQeCrsvkJgwm5WDUpog0wDKaN0ynceEAIc1EHuIOoBGneDofOFEUYhA3v0VcQC42JlmOmIvOl/XS7A8SpJ+5N/zOSKmxOGZLNPhYiYqGnRgynxBuj4dD4Ez9AcGz2HmcBMdNVdbrQlW2ZDXUEEH2ThyYd7duPLrTzShqIXPebKr3TA2TE56dfp43Id5ibCLGe22UmTDyoAjSbeZksrRnr4aVI+jPSWoI3lkS15/abOjAymPi6WuG3Leluw5UHmxE/Pn0I5ObmX+Lk5L9fRQeYrVcutXe4M6N6VuPq3Lk0a6IfFrvq0Q+/m/wBs5zXqn1diLbXS7pTrQuidr0nfGajhld1sPZ/tnmctSE/S4X1HJtR9h919m3hOm8C7R5bND9m9OBbI2jjy/mHiJw8wR+TldHZXDEjl9XlAApg4N3diq6b6zbFj9DGSZz7sh26LsuBmiOY0qY2gBPRXGwJ6MNO/vnQTCWMbQg0IR981zt9nRh5HFurcfRKO/n0b3LzHymxTmnpXzlvgYIOgVsRh4seRD7lf3wsc+AliYy1SgYaXGmKyOrKaZSGB0NEbGjpBCNL261vXWosYrzsUvks8vNXNy2a5iNLqrrrArExFbl5UCUiqaJPMy2C+uxOmnhMckdZUAE23sH2tOTcpiWcu59cAWcN9g6gbitCNyAK1FHUrgZLNkun6ZwcVHVXRgysAyspsEHUEEbiUROE9ku2ePkjyV9Jgk2cNjXKTu2G38p7xVHwOs6lwjtxw/MAVjDDf6mNSNfcCTyt5EzlcdOsylbFUTRLjIRYZSO8EEe8Ty+Kdospgf4uYw0NXy84Zz7EW2PkJnTW3pM81ftn2lTKYWhBxXBGGm+v12H1R8dprPH/SYKKZRCTt9LiCgPFE3P3q9hnOc3msTFdnxHZ3bVmY2T+Q8BpN44/1zyy/i8S3D4ruxdn0tCedjZxG5/4Ry2nq7+uNAJ88ov6oWtixuzrYUVy7CuXfc3rsKmdWBERGYCEYsXDIAOlEGtQdjWo3G3Wdg7AcbOZy/K5vEwqRid2WvUY+0AgnqVM4/ivetAaAadaFWfE1Z9s2T0dcQ+izioT6uKpwz3c38SH3qR96CuwtCBhDL7pxb0gZnnz+L9gIg8kDH4sZ2cGcI45mC+bzDgK14mLo2o5RzLe+4AseIG+0lajymmfMYJR2wyUYqxUsjB0JXqrDceM+cyAf+JVfSO6LFxCWtjZoDyUADbwFeUjn0g50EIfUypA3lQpxGEDATeMkjx98ZMkyCDhj6q+6UoPgPZCVKACELgYCjuEkmENjEx0iJ1ksYEt0EsM2HiBlZedHBVlPMvMjWCpG4sTHGFkV3vhmdGPg4eMooOitR6WNR74Tx+wmLzZDB8Odf9ruPwhKw2rExQqljsoLH2AXPz27FiSTRNsb7953HtBiFcrmGG4wcQj28jThrQ1EzEw6eY+cyCJxIqAx/wCe+Wz2F9v5zGx0+I+YiU7e2B9IjDkWtmjRIB0JF1Y61ZrusxCZMHEPK68/KrAEir5iptRdaam+g09koxwMUIFKlgmwKrQmibNeqOv5SDHJgKWqEgmxpVgsATd1yqTbba1tpdWJBgJA440RiaUEk7AAkn2AbyJRQPhBXI1HiPeKP4yI2gSx1iO/si6xBtLMAAjMSd5gsDqvo2x+bKFfq4rr7wr/APtCfL6L2/YYw/zb96J+UIZbZ2kF5TMj/JxP/G04g287d2nflyeZP+TifFCPnOItJViTC4GAlVhYdPMe2CH8ZbD9bfGY+sg+q5IML0gJQ4RQuAGTccUAJhFCAwxGoNHpLxmTmPICF0oMwY7C7YAA62dpiMDAYhcJJOkCV/GJtTETUa6C5A27vfBo1ERlR0j0Yf4ON/qj+xYTL6OErLOfrYrH3Ii/IwhGwdtsXlyOOe9Qv+91X5zjLTrnpFP7i/i+GP8AvU/KcjaSrCiaMxSql++YzMhmHFvQeMg+gGEQO0YlDgBAiBgEUcDAmEIQFcUqEAkPtHJxugHWBKCzKGpvp0/OKug85YhCiEGMIHWuw2DyZLDvdi7+TO1fACE9LgeGFy+AB0wsMf8AYIQy+L0kmskfHEwx+J+U5Md51f0oH90Xxxk/sxD8pydjJWoIXJDXLwyt+vzVR/hAJuvV3O11fhcKkiYsVqEoPMGKb079IH0psJYkYewlrKAiO4jHAULiEcCYjKqSYCgIGK4FCYnfXylgyCttfQSCkFb7mMy8FwLvmA5WHq1uQaBv+UnfwuRcqFIc6H2GWRPp4Tl/pMfCSr5sRFr7JYc3wuRXbMHD5UVfqqo9wAhMjQlYeJ6Tf/xj/VSvc/yucmInUPSpiEZbCX62NZ+6j/mJy+5K1Essgkd8p3EQXw98KkzGE1szNRiYQLw9pkExZfaZblCjMmO4CjB8AfA3r4GtYoGARQuBhEmTUoyYUCYLPMT0meSq6SBo5IrXcadOuv67zGTJK11MA8BsZsPYXLc+cw+5A7nyUqPi4mugzefRlgW+NiEbKiA/1Fi39ixEroTQiMJplqXpXc/uw6ftTXiBhC/iffObiOEzWoZ6RnaEJVevwrIYTqSy3X2mH4GeLmhRI7jHCYnq5fmMeDMxhCbRMcIQCOEIRERhCFBkmEICfaSu0ISC22kCEIFTovo0/wAHF/1B/aYQiJW5mOEJpl//2Q==">
+                            <div class="profile-img-side-right">
+                                <h4>Gunrok Park</h4>
+                                <p>Developer</p>
+                                <p>
+                                    <i class="fas fa-location-arrow"><span>Seoul</span></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
