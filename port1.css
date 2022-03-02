@@ -1,0 +1,192 @@
+body {
+  margin: 0px;
+}
+div,
+h4,
+p {
+  border-style: none;
+  box-sizing: border-box;
+  margin: 0px;
+}
+.container {
+  padding: 30px;
+}
+.container-top {
+  height: 60%;
+}
+.container-top-1 {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  height: 50%;
+  /* 시계방향 */
+  padding: 5% 5% 0px 8%;
+  color: white;
+  transform: rotate(0.03deg);
+  background: linear-gradient(to bottom, #59b3ef, #6d6cdf);
+}
+.container-top-1 h4 {
+  font-size: 1.5rem;
+  margin-bottom: 5%;
+}
+.container-top-1 p {
+  margin-bottom: 5%;
+}
+.container-top-img {
+  width: 400px;
+  height: 400px;
+}
+.container-top-2 {
+  padding: 5% 0%;
+  height: 20%;
+  text-align: center;
+}
+.container-top-2 h4,
+.container-top-2 p {
+  margin-bottom: 1%;
+}
+
+.container-top-3 {
+  text-align: center;
+  background-color: #6d6cdf;
+  padding: 5% 0px;
+}
+.black-button {
+  border-style: none;
+  background-color: #746c6a;
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: white;
+}
+.container-top-3-icons-container {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5% 8% 0px 8%;
+}
+
+.container-top-3-title {
+  color: white;
+  padding-top: 10px;
+  font-size: 1.1rem;
+}
+.container-top-3-content {
+  color: white;
+  padding-top: 6px;
+  font-size: 0.9rem;
+}
+
+/* div로 해야할듯 */
+
+.icons-item i {
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 100px;
+  width: 70px;
+  height: 70px;
+  padding-top: 19px;
+  color: #6d6cdf;
+}
+/* 그라데이션 탑=파 바텀=보 */
+
+.container-bottom {
+  height: 40%;
+}
+.container-bottom-1 {
+  text-align: center;
+  padding: 3% 0px;
+}
+
+.container-bottom-2 {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 1% 6%;
+}
+.container-bottom-2-container {
+  width: 100%;
+}
+.container-bottom-2-item {
+  position: relative;
+  height: 330px;
+}
+.container-bottom-2-img {
+  width: 100%;
+  height: 100%;
+}
+
+.container-bottom-2-img-content {
+  position: absolute;
+  color: white;
+  padding: 12% 10%;
+}
+.overlay {
+  /* 해당 이미지만 살짝 어둡게보이기위해 (overlay를 덮어씌움) */
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  /* 오버레이를 호버해야지 애니메이션이 끊김이없어서 z-index를 아예 맨위로 조정한 모오습 */
+  z-index: 1;
+  transition: all 0.5s;
+}
+
+/*
+애니메이션 효과를 주려면 그걸 덮는 overlay의 설계도 중요해보인다.
+overlay의 border를 높여서 이미지가 줄어드는것처럼 보이는 효과를 넣음
+*/
+
+.overlay:hover {
+  border: 20px solid white;
+}
+
+.container-bottom-3 {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5% 36%;
+}
+.container-bottom-3 i {
+  box-sizing: border-box;
+  background-color: #6d6cdf;
+  border-radius: 100px;
+  padding-top: 15px;
+  padding-left: 15px;
+  width: 60px;
+  height: 60px;
+  color: white;
+}
+
+/* 반응형을 위해서라도 width height이런건 %로 짜는게 좋다! */
+
+@media screen and (max-width: 568px) {
+  .container-top-1 {
+    display: block;
+  }
+  .container-top-1-left {
+    text-align: center;
+  }
+  .container-top-img {
+    width: 90%;
+    height: 20%;
+  }
+  .container-top-1-right {
+    padding-top: 20px;
+    text-align: center;
+  }
+  .container-top-3-icons-container {
+    flex-direction: column;
+  }
+  .icons-item {
+    margin-top: 4%;
+  }
+  .container-bottom-2 {
+    flex-direction: column;
+  }
+
+  .container-bottom-2-img {
+    width: 100%;
+    height: 100%;
+  }
+  .container-bottom-3 {
+    justify-content: space-evenly;
+    padding: 10% 3% 3% 3%;
+  }
+}
