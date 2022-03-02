@@ -31,8 +31,8 @@ li {
 
 .container {
   padding: 70px 100px;
-  font-family: "Nanum Pen Script", cursive;
-  font-size: 1.5rem;
+  font-family: "Yeon Sung", cursive;
+  font-size: 1.2rem;
 }
 .profile {
   display: flex;
@@ -64,9 +64,10 @@ li {
 }
 
 .profile-img-side {
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
   border-radius: 100px;
+  margin-top: 3%;
 }
 
 .title {
@@ -149,7 +150,7 @@ li {
 
 .profile-img-side-right {
   padding-top: 1%;
-  margin-left: 10%;
+  margin-left: 5%;
 }
 
 .profile-img-side-right h4 {
@@ -157,8 +158,9 @@ li {
 }
 
 .profile-side {
+  width: 100%;
+  margin-top: 10%;
   box-sizing: border-box;
-  padding-top: 5%;
 }
 
 .long {
@@ -166,8 +168,12 @@ li {
   font-size: 1.2rem;
 }
 
+.profile-side-container {
+  margin-top: 8%;
+}
+
 /* and 띄어쓰기를 해야하네; */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 796px) {
   .container {
     font-size: 1.5rem;
   }
