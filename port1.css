@@ -156,7 +156,7 @@ overlay의 border를 높여서 이미지가 줄어드는것처럼 보이는 효�
 
 /* 반응형을 위해서라도 width height이런건 %로 짜는게 좋다! */
 
-@media screen and (max-width: 568px) {
+@media screen and (max-width: 796px) {
   .container-top-1 {
     display: block;
   }
